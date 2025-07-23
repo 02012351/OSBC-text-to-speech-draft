@@ -124,8 +124,8 @@
 
     <script>
         function submitForm() {
-            const group_id = '1942475203674116903';
-            const api_key = 'API key';
+            const group_id = '${{ secrets.GROUP_ID }}';
+            const api_key = '${{ secrets.API_KEY }}';
             const voice_id = document.getElementById('voice_id').value || "cute_girl_test";
             const model = document.getElementById('model').value;
             const speed = document.getElementById('speed').value;
